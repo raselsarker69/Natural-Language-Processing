@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Decoder Box</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:white;
+        }
+        .box {
+            background-color: #008066;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 20px 40px;
+            border-radius: 20px;
+            border: 2px solid black;
+            text-align: center;
+            position: relative;
+        }
+        .box::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-20%);
+            width: 0px;
+            height: 0px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Fused Features</div>
+    </div>
+</body>
+</html>
